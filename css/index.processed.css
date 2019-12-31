@@ -1,0 +1,177 @@
+.window {
+  font-size: 15px;
+}
+
+@media (max-width: 576px) {
+  .window {
+    margin-bottom: 20px;
+  }
+}
+
+.window .title {
+  border-radius: 5px 5px 0 0;
+  height: 30px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  background: linear-gradient(to bottom, #e8e8e8, #bcbbbc);
+}
+
+.window .terminal {
+  display: block;
+  padding: 15px;
+  background: #000;
+  font-family: 'Fira Code', 'Menlo', 'Courier', monospace;
+  border-radius: 0 0 5px 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #fff;
+  height: 600px;
+  max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .window .terminal {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .window .terminal {
+    height: 250px;
+  }
+}
+
+.window .terminal code {
+  white-space: pre;
+  width: inherit;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(120deg, #a90329 0 50%, #6d0019 50% 100%);
+  min-height: 100vh;
+}
+
+.hero {
+  overflow: auto;
+  color: #fff;
+}
+
+.hero .row {
+  height: 100vh;
+}
+
+.hero .business-card {
+  animation: 2s slideleft;
+}
+
+@media (max-width: 576px) {
+  .hero .business-card {
+    animation: 2s slideup;
+    margin-bottom: 50px;
+  }
+}
+
+.hero .business-card .logo {
+  margin: 5%;
+}
+
+.hero .business-card .link {
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: transform 0.2s;
+}
+
+.hero .business-card .link:hover {
+  transform: scale(1.1);
+}
+
+@-moz-keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-o-keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-moz-keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-o-keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
