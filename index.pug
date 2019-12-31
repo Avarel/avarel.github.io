@@ -14,9 +14,9 @@ html(lang='en')
           .col-md-4.col-sm-5.col-xs-12.align-self-center
             .business-card
               img.logo(src='./assets/RealName.svg')
-              img.link(src='./assets/Resume.svg')
-              img.link(src='./assets/GitHub.svg')
-              img.link(src='./assets/Contact.svg')
+              a(href='./assets/resume.pdf'): img.link(src='./assets/Resume.svg')
+              a(href='https://github.com/Avarel'): img.link(src='./assets/GitHub.svg')
+              a(href='mailto:antran@caltech.edu'): img.link(src='./assets/Contact.svg')
           .col-md-8.col-sm-7.col-xs-12.align-self-center
             .window.shadow
               .title Terminal

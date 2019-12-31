@@ -12,7 +12,8 @@ let typed = new Typed('.terminal code', {
 > ^1000let resume = an_tran.resume()
 
 \`Resume { 
-  link: <a href="/">https://google.com</a>, 
+  link: <a href="/">./assets/resume.pdf</a>,
+  version: 3.0
   ... 
 }\`
 
