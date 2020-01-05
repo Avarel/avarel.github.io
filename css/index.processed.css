@@ -50,11 +50,12 @@
 }
 
 body {
-  background: linear-gradient(120deg, #a90329 0 50%, #6d0019 50% 100%);
+  background: url("../assets/bg-tile.png"), #6d0019;
   min-height: 100vh;
 }
 
 .hero {
+  background: linear-gradient(120deg, #a90329 49.9%, rgba(0, 0, 0, 0) 50%);
   overflow: auto;
   color: #fff;
 }
