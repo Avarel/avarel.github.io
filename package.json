@@ -1,0 +1,36 @@
+{
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Avarel/avarel.github.io.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build:dev": "webpack --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js",
+        "start": "webpack-dev-server --open --config webpack.dev.js --hot"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/react": "^16.14.2",
+        "@types/react-dom": "^16.9.10",
+        "copy-webpack-plugin": "^7.0.0",
+        "css-loader": "^3.6.0",
+        "file-loader": "^6.2.0",
+        "html-loader": "^1.3.2",
+        "html-webpack-plugin": "^4.5.0",
+        "mini-css-extract-plugin": "^1.3.3",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "sass": "^1.30.0",
+        "sass-loader": "^9.0.2",
+        "style-loader": "^1.3.0",
+        "ts-loader": "^7.0.5",
+        "typed.js": "^2.0.11",
+        "typescript": "^3.9.7",
+        "webpack": "^5.10.1",
+        "webpack-cli": "^4.2.0",
+        "webpack-dev-middleware": "^4.0.2",
+        "webpack-dev-server": "^4.0.0-beta.0",
+        "webpack-merge": "^4.2.2"
+    }
+}
