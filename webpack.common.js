@@ -19,6 +19,14 @@ module.exports = {
         "typed.js": "Typed"
     },
     plugins: [
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, "src", "assets", "resume.pdf"),
+                    to: path.resolve(__dirname, "dist", "assets", "resume.pdf")
+                },
+            ],
+        }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             scriptLoading: "defer",
