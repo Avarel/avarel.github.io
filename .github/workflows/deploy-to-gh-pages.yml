@@ -14,6 +14,7 @@ jobs:
 
       - name: Install and Build
         run: |
+          npm run-script clean
           npm install
           npm run-script build
 
@@ -23,3 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: dist
+          CLEAN: true

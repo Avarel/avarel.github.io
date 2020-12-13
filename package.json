@@ -7,7 +7,8 @@
     "scripts": {
         "build:dev": "webpack --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js",
-        "start": "webpack-dev-server --open --config webpack.dev.js --hot"
+        "start": "webpack-dev-server --open --config webpack.dev.js --hot",
+        "clean": "rm -rf ./dist"
     },
     "dependencies": {},
     "devDependencies": {

@@ -12,6 +12,7 @@ module.exports = {
         chunkFilename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
         publicPath: "",
+        assetModuleFilename: "./assets/[name][ext][query]"
     },
     externals: {
         "react": "React",
