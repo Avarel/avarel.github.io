@@ -12,7 +12,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@types/react": "^16.14.2",
+        "@types/react": "^17.0.0",
         "@types/react-dom": "^16.9.10",
         "copy-webpack-plugin": "^7.0.0",
         "css-loader": "^3.6.0",
