@@ -78,7 +78,7 @@
         flex: 0 0 50px;
         display: flex;
         align-items: center;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
         user-select: none;
 
         .button {
@@ -121,7 +121,7 @@
         }
     }
     .body {
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.8);
         display: flex;
         color: white;
         flex: 1;
@@ -141,6 +141,7 @@
         }
     }
 }
+
 body {
     background: url("./assets/bg-tile.png"), #6d0019;
     min-height: 100vh;

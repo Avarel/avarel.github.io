@@ -30,12 +30,13 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
+            favicon: './src/assets/favicon.ico',
             scriptLoading: "defer",
             chunks: ["index"],
         }),
     ],
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".scss", ".css", ".pug", ".html"]
+        extensions: [".ts", ".tsx", ".js", ".scss", ".css", ".html"]
     },
     module: {
         rules: [
@@ -70,7 +71,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
                 type: 'asset/resource',
             },
         ]
