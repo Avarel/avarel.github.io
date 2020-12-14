@@ -207,12 +207,11 @@ body {
 
                 left: 0;
                 right: 0;
-                margin-left: auto;
-                margin-right: auto;
+                margin-left: 5%;
 
                 svg {
                     position: absolute;
-
+                    overflow: visible;
                     display: none;
 
                     align-self: center;
