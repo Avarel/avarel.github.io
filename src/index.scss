@@ -54,8 +54,6 @@
 }
 
 .window {
-    // transform: perspective(1000px) rotateY(-10deg) rotateX(5deg) rotate(0deg);
-
     display: flex;
     flex-direction: column;
 
@@ -69,7 +67,6 @@
     max-height: 80vh;
 
     @include small-screen {
-        // transform: none;
         height: 250px;
         margin-bottom: 20px;
     }
@@ -113,7 +110,7 @@
             display: flex;
             flex: 1 0 auto;
             color: white;
-            font-family: 'Lucida Grande', sans-serif;
+            font-family: "Lucida Grande", sans-serif;
 
             position: absolute;
             left: 50%;
@@ -147,9 +144,39 @@ body {
     min-height: 100vh;
 }
 
+@keyframes jelly {
+    0% {
+        width: 100%;
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px) rotateX(40deg)
+            rotateY(10deg) rotateZ(-10deg);
+    }
+    50% {
+        width: 100%;
+        transform: scale(1.25, 1.1) skewX(-15deg) translateY(-2px)
+            translateZ(-30px);
+    }
+    100% {
+        width: 100%;
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px) rotateX(-40deg)
+            rotateY(-10deg) rotateZ(-15deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
 .hero {
     background: linear-gradient(120deg, #a90329 49.9%, #00000000 50%);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     color: white;
     .row {
         height: 100vh;
@@ -165,13 +192,65 @@ body {
         .logo {
             margin: 5%;
         }
-        img.link {
-            margin-left: 15%;
-            margin-right: 15%;
 
-            transition: transform 0.2s;
+        .item {
+            position: relative;
+            .jelly {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                pointer-events: none;
+
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                svg {
+                    position: absolute;
+
+                    display: none;
+
+                    align-self: center;
+                    width: 100%;
+
+                    &.red {
+                        animation-delay: 0.05s;
+                        animation-duration: 0.4s;
+                        mix-blend-mode: lighten;
+                    }
+                    &.cyan {
+                        animation-delay: 0.08s;
+                        animation-duration: 0.45s;
+                        mix-blend-mode: hue;
+                    }
+
+                    animation-name: jelly;
+                    transform-origin: center;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+            }
+
             &:hover {
-                transform: scale(1.1);
+                .jelly > svg {
+                    display: initial;
+                }
+
+                img.link {
+                    animation: bounce .15s ease;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            img.link {
+                margin-left: 15%;
+                margin-right: 15%;
+
+                transition: transform 0.2s;
             }
         }
     }
