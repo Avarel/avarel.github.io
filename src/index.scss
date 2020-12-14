@@ -146,19 +146,13 @@ body {
 
 @keyframes jelly {
     0% {
-        width: 100%;
-        transform: scale(1.25, 1) skewX(20deg) translateY(3px) rotateX(40deg)
-            rotateY(10deg) rotateZ(-10deg);
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px);
     }
     50% {
-        width: 100%;
-        transform: scale(1.25, 1.1) skewX(-15deg) translateY(-2px)
-            translateZ(-30px);
+        transform: scale(1.25, 1.1) skewX(-15deg) translateY(-2px);
     }
     100% {
-        width: 100%;
-        transform: scale(1.25, 1) skewX(20deg) translateY(3px) rotateX(-40deg)
-            rotateY(-10deg) rotateZ(-15deg);
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px);
     }
 }
 
@@ -195,8 +189,11 @@ body {
         }
 
         .item {
+            isolation: isolate;
             position: relative;
             .jelly {
+                filter: sepia(50%) saturate(3);
+                mix-blend-mode: multiply;
                 position: absolute;
                 top: 0;
                 height: 100%;
@@ -220,12 +217,13 @@ body {
                     &.red {
                         animation-delay: 0.05s;
                         animation-duration: 0.4s;
-                        mix-blend-mode: lighten;
+                        opacity: 0.8;
+                        // mix-blend-mode: lighten;
                     }
                     &.cyan {
                         animation-delay: 0.08s;
                         animation-duration: 0.45s;
-                        mix-blend-mode: darken;
+                        mix-blend-mode: screen;
                     }
 
                     animation-name: jelly;
@@ -249,6 +247,7 @@ body {
             img.link {
                 margin-left: 15%;
                 margin-right: 15%;
+                z-index: -1;
 
                 transition: transform 0.2s;
             }
