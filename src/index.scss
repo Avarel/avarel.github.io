@@ -173,6 +173,7 @@ body {
         transform: scale(1.15);
     }
 }
+
 .hero {
     background: linear-gradient(120deg, #a90329 49.9%, #00000000 50%);
     overflow-y: auto;
@@ -225,7 +226,7 @@ body {
                     &.cyan {
                         animation-delay: 0.08s;
                         animation-duration: 0.45s;
-                        mix-blend-mode: hue;
+                        mix-blend-mode: darken;
                     }
 
                     animation-name: jelly;
