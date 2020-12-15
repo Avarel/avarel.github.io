@@ -146,13 +146,13 @@ body {
 
 @keyframes jelly {
     0% {
-        transform: scale(1.25, 1) skewX(20deg) translateY(3px);
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px) skewY(10deg) skewZ(-10deg);
     }
     50% {
         transform: scale(1.25, 1.1) skewX(-15deg) translateY(-2px);
     }
     100% {
-        transform: scale(1.25, 1) skewX(20deg) translateY(3px);
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px) skewY(-10deg) skewZ(-15deg);
     }
 }
 
@@ -217,8 +217,6 @@ body {
                     &.red {
                         animation-delay: 0.05s;
                         animation-duration: 0.4s;
-                        opacity: 0.8;
-                        // mix-blend-mode: lighten;
                     }
                     &.cyan {
                         animation-delay: 0.08s;
@@ -237,6 +235,8 @@ body {
                 .jelly > svg {
                     display: initial;
                 }
+
+                z-index: 9999;
 
                 img.link {
                     animation: bounce .15s ease;
