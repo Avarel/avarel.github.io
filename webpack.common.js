@@ -39,6 +39,9 @@ module.exports = {
         extensions: [".ts", ".tsx", ".js", ".scss", ".css", ".html"]
     },
     module: {
+        parser: {
+            url: "relative",
+        },
         rules: [
             {
                 test: /\.html$/i,
