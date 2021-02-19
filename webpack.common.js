@@ -39,8 +39,8 @@ module.exports = {
         extensions: [".ts", ".tsx", ".js", ".scss", ".css", ".html"]
     },
     module: {
-        javascript: {
-            parser: {
+        parser: {
+            javascript: {
                 url: "relative",
             },
         },
