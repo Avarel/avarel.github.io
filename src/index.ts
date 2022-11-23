@@ -1,5 +1,6 @@
 import "./reset.css";
 import "./index.scss";
+// import "./super";
 
 import Typed from "typed.js";
 

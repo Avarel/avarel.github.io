@@ -48,12 +48,27 @@ $rim-size: 8px;
 
         .abs-svg {
             position: absolute;
+            z-index: 9999;
+            user-select: none;
+            max-width: 60%;
+        }
+
+        &.edu .abs-svg {
             width: 200px;
             right: -10px;
             top: -10px;
-            max-width: 60%;
-            z-index: 9999;
-            user-select: none;
+        }
+
+        &.code .abs-svg {
+            width: 120px;
+            right: -15px;
+            top: -15px;
+        }
+
+        &.curemploy .abs-svg {
+            width: 100px;
+            right: -25px;
+            top: -25px;
         }
 
         .header {
@@ -133,7 +148,8 @@ $rim-size: 8px;
                 display: flex;
                 flex-grow: 1;
                 padding: 0px 20px 0px;
-                min-height: 40px;
+                // min-height: 40px;
+                // max-height: none;
 
                 .subbox {
                     flex-direction: row;
@@ -185,8 +201,12 @@ body {
         transform: scale(1.25, 1) skewX(20deg) translateY(3px) skewY(10deg) skewZ(-10deg);
     }
 
-    50% {
+    33% {
         transform: scale(1.25, 1.1) skewX(-15deg) translateY(-2px);
+    }
+
+    66% {
+        transform: scale(1, 1.25) skewX(-10deg) translateY(-5px) skewY(5deg) skewZ(25deg);
     }
 
     100% {
@@ -206,6 +226,12 @@ body {
     100% {
         transform: scale(1.15);
     }
+}
+
+canvas#canvas {
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 .hero {
@@ -259,12 +285,13 @@ body {
 
                     &.red {
                         animation-delay: 0.05s;
-                        animation-duration: 0.4s;
+                        animation-duration: 0.378s;
                     }
 
                     &.cyan {
                         animation-delay: 0.08s;
-                        animation-duration: 0.45s;
+                        animation-delay: -1s;
+                        animation-duration: 0.423s;
                         mix-blend-mode: screen;
                     }
 
