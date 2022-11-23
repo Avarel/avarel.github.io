@@ -143,6 +143,7 @@ $rim-size: 8px;
             height: calc(100% - $header-height);
             flex-direction: column;
             overflow-y: auto;
+            overflow-x: hidden;
 
             .row {
                 display: flex;
