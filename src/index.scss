@@ -58,7 +58,6 @@ $rim-size: 8px;
             align-items: center;
 
             display: flex;
-            user-select: none;
 
             .title {
                 background: linear-gradient(100deg, white 49.9%, #ebebeb 50%);
@@ -89,7 +88,6 @@ $rim-size: 8px;
         > .abs-svg {
             position: absolute;
             z-index: 9999;
-            user-select: none;
             max-width: 60%;
             right: -10px;
             top: 0px;

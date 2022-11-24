@@ -17,7 +17,6 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM",
-        "typed.js": "Typed"
     },
     plugins: [
         new CopyPlugin({
@@ -30,7 +29,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            favicon: './src/assets/favicon.ico',
+            favicon: './src/assets/icons/favicon.ico',
             scriptLoading: "defer",
             chunks: ["index"],
         }),
