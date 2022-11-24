@@ -1,4 +1,5 @@
 $header-height: 50px;
+$header-offset: 20px;
 $rim-size: 8px;
 
 @mixin small-screen {
@@ -44,38 +45,14 @@ $rim-size: 8px;
 
         margin-top: 12px;
         margin-bottom: 12px;
-        padding: 0px $rim-size $rim-size;
+        padding: $rim-size;
 
         font-size: 17px;
 
-        background-color: white;
-        border: $rim-size solid black;
         transition: transform 0.2s;
 
-        &.red {
-            background-color: #c7002e;
-
-            .header .title {
-                color: white;
-            }
-        }
-
-
         > .header {
-            // &:before {
-            //     height: 50px;
-            //     // width: 100%;
-            //     top: -5px;
-            //     right: -15px;
-            //     left: -10px;
-            //     background-color: white;
-            //     position: absolute;
-            //     border: 5px solid black;
-            //     transform: perspective(200px) rotateY(2deg) rotateX(-3deg) rotate(0deg);
-            //     content: "";
-            // }
-
-            height: $header-height;
+            height: $header-height - $header-offset;
 
             flex: 0 0 $header-height;
             align-items: center;
@@ -84,12 +61,23 @@ $rim-size: 8px;
             user-select: none;
 
             .title {
-                padding-left: 10px;
-                flex: 1 0 auto;
-                justify-content: left;
+                background: linear-gradient(100deg, white 49.9%, #ebebeb 50%);
+                border: 5px solid black;
+                position: relative;
+                left: -15px;
+                top: 15px;
+                height: $header-height + 10px;
 
+                transform: rotate(-2deg);
+
+                max-width: 100%;
+                padding: 10px 40px 10px 25px;
+                // flex: 1 0 auto;
+                align-items: center;
+                justify-content: left;
+                
                 display: flex;
-                z-index: 1;
+                z-index: 2;
 
                 color: black;
                 font-size: 25px;
@@ -103,15 +91,11 @@ $rim-size: 8px;
             z-index: 9999;
             user-select: none;
             max-width: 60%;
+            right: -10px;
+            top: 0px;
         }
 
         &.edu {
-            .abs-svg {
-                width: 200px;
-                right: -20px;
-                top: -20px;
-            }
-
             transform: perspective(200px) rotateY(2deg) rotateX(5deg) rotate(0deg);
         }
 
@@ -120,12 +104,6 @@ $rim-size: 8px;
         }
 
         &.curemploy {
-            .abs-svg {
-                width: 100px;
-                right: -15px;
-                top: -25px;
-            }
-
             transform: perspective(200px) rotateY(-3deg) rotateX(2deg) rotate(0deg);
         }
 
@@ -134,23 +112,33 @@ $rim-size: 8px;
         }
 
         &.code {
-            .abs-svg {
-                width: 120px;
-                right: -20px;
-                top: -25px;
-            }
-
             transform: perspective(300px) rotateY(2deg) rotateX(2deg) rotate(0deg);
         }
-
 
         &:hover {
             transform: none;
         }
 
+        &.red > .body {
+            border: $rim-size solid red;
+        }
+
         > .body {
-            height: calc(100% - $header-height);
+            height: calc(100% - $header-height + $header-offset);
+            padding-top: $header-offset;
             background: black;
+            
+            &:before {
+                content: "";
+                position: absolute;
+                top: $header-height - $header-offset;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: $rim-size solid black;
+            }
+
+            border: $rim-size solid white;
 
             display: flex;
             flex-direction: column;
@@ -163,6 +151,7 @@ $rim-size: 8px;
                 display: flex;
                 flex: 1;
                 padding: 0px 20px 0px;
+                z-index: 1;
 
                 > .item {
                     display: flex;
@@ -190,6 +179,7 @@ $rim-size: 8px;
             > .content {
                 flex: 1;
                 padding: 20px;
+                
                 overflow-y: auto;
                 overflow-x: hidden;
 
@@ -248,7 +238,7 @@ body {
 // }
 
 .hero {
-    background: linear-gradient(100deg, #a90329 49.9%, #00000000 50%);
+    background: linear-gradient(100deg, #8d0a28 24.9%, #a90329 25%, #a90329 49.9%, #00000000 50%);
     overflow-y: auto;
     overflow-x: hidden;
     color: white;
