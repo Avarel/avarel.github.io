@@ -1,5 +1,5 @@
 $header-height: 50px;
-$header-offset: 20px;
+$header-offset: 30px;
 $rim-size: 8px;
 
 @mixin small-screen {
@@ -40,6 +40,8 @@ $rim-size: 8px;
     .box {
         position: relative;
 
+        display: flex;
+        flex-direction: column;
         height: 200px;
         max-height: 80vh;
 
@@ -52,7 +54,7 @@ $rim-size: 8px;
         transition: transform 0.2s;
 
         > .header {
-            height: $header-height - $header-offset;
+            height: $header-offset;
 
             flex: 0 0 $header-height;
             align-items: center;
@@ -122,20 +124,10 @@ $rim-size: 8px;
         }
 
         > .body {
-            height: calc(100% - $header-height + $header-offset);
-            padding-top: $header-offset;
+            flex: 1;
+            padding-top: $header-height - $header-offset;
             background: black;
             
-            &:before {
-                content: "";
-                position: absolute;
-                top: $header-height - $header-offset;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border: $rim-size solid black;
-            }
-
             border: $rim-size solid white;
 
             display: flex;
@@ -144,6 +136,16 @@ $rim-size: 8px;
             overflow-x: hidden;
 
             color: white;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: $header-height;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: $rim-size solid black;
+            }
 
             > .row {
                 display: flex;
