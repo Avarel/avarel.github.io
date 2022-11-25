@@ -56,7 +56,7 @@ $rim-size: 8px;
         > .header {
             height: $header-offset;
 
-            flex: 0 0 $header-height;
+            flex: 0 0 $header-offset;
             align-items: center;
 
             display: flex;
@@ -140,7 +140,7 @@ $rim-size: 8px;
             &:before {
                 content: "";
                 position: absolute;
-                top: $header-height;
+                top: $header-offset;
                 left: 0;
                 right: 0;
                 bottom: 0;
