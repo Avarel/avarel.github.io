@@ -9,7 +9,6 @@
         "noImplicitReturns": true,
         // Other goodies
         "removeComments": true,
-        "suppressImplicitAnyIndexErrors": true,
         "sourceMap": true,
         "esModuleInterop": true,
         "jsx": "react"
