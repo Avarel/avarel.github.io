@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
+const devMode = process.env.NODE_ENV !== "production";
+
 module.exports = {
     entry: {
         index: "./src/index.ts",
@@ -33,7 +35,7 @@ module.exports = {
             scriptLoading: "defer",
             chunks: ["index"],
         }),
-    ],
+    ].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".scss", ".css", ".html"]
     },
@@ -54,23 +56,12 @@ module.exports = {
                 loader: "ts-loader"
             },
             {
-                test: /\.css$/,
+                test: /\.(sa|sc|c)ss$/i,
                 use: [
                     // fallback to style-loader in development
-                    process.env.NODE_ENV !== 'production'
-                        ? 'style-loader'
-                        : MiniCssExtractPlugin.loader,
-                    "css-loader"
-                ],
-            },
-            {
-                test: /\.s[ac]ss$/,
-                use: [
-                    // fallback to style-loader in development
-                    process.env.NODE_ENV !== 'production'
-                        ? 'style-loader'
-                        : MiniCssExtractPlugin.loader,
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                     "css-loader",
+                    "postcss-loader",
                     "sass-loader"
                 ]
             },
