@@ -86,7 +86,6 @@ $rim-size: 8px;
       }
     }
 
-
     >.abs-svg {
       position: absolute;
       z-index: 9999;
@@ -234,7 +233,11 @@ body {
 }
 
 body>main {
-  background: linear-gradient(100deg, #8d0a28 24.9%, #a90329 25%, #a90329 49.9%, #00000000 50%);
+  background: linear-gradient(100deg,
+      #8d0a28 24.9%,
+      #a90329 25%,
+      #a90329 49.9%,
+      #00000000 50%);
   overflow-y: auto;
   overflow-x: hidden;
   color: white;
@@ -312,7 +315,7 @@ body>main {
           z-index: 9999;
 
           img.link {
-            animation: bounce .15s ease;
+            animation: bounce 0.15s ease;
             animation-fill-mode: forwards;
           }
         }

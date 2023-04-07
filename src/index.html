@@ -1,224 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>An Tran - Software Engineer</title>
+    <meta name="author" content="An Tran (Avarel)" />
+    <meta
+      name="keywords"
+      content="caltech, software engineer, computer science"
+    />
+    <meta
+      name="description"
+      content="Computer science major from Caltech 2023. Engineer by day, at night I sleep."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arsenal:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
 
-<head>
-  <title>An Tran - Software Engineer</title>
-  <meta name="author" content="An Tran (Avarel)">
-  <meta name="keywords" content="caltech, software engineer, computer science">
-  <meta name="description" content="Computer science major from Caltech 2023. Engineer by day, at night I sleep." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+  </head>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-</head>
-
-<body>
-  <!-- <canvas id="canvas"></canvas> -->
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 align-self-center">
-          <nav>
-            <header><img src="./assets/RealName.svg" alt="An Tran" /></header>
-            <ul>
-              <li>
-                <a href="./assets/resume.pdf" target="_blank" aria-label="Resume"><img class="link"
-                    src="./assets/Resume.svg" alt="Resume" /></a>
-                <div class="jelly">
-                  <svg class="red" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 " />
-                  </svg>
-                  <svg class="cyan" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 " />
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <a href="https://github.com/Avarel" target="_blank" aria-label="GitHub"><img class="link"
-                    src="./assets/GitHub.svg" alt="GitHub" /></a>
-                <div class="jelly">
-                  <svg class="red" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#FF0000" points="15.5,0 85.7,10 118.1,32.7 43.1,40 "></polygon>
-                  </svg>
-                  <svg class="cyan" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#00FFFF" points="40.3,10 105.1,0 68.8,35.6 10,39 "></polygon>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <a href="https://artavarel.tumblr.com/" target="_blank" aria-label="Personal Art Gallery"><img
-                    class="link" src="./assets/Gallery.svg" alt="Personal Art Gallery" /></a>
-                <div class="jelly">
-                  <svg class="red" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#FF0000" points="15,5.5 120.7,10 100.1,38.7 0.1,35 "></polygon>
-                  </svg>
-                  <svg class="cyan" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#00FFFF" points="0,8.5 110.7,0 118.1,32.7 20.1,40"></polygon>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/an-tran-ct" target="_blank" aria-label="LinkedIn"><img class="link"
-                    src="./assets/LinkedIn.svg" alt="LinkedIn" /></a>
-                <div class="jelly">
-                  <svg class="red" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#FF0000" points="0.5,8.5 100.7,0 128.1,32.7 40.1,47 "></polygon>
-                  </svg>
-                  <svg class="cyan" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#00FFFF" points="0.3,17 125.1,0 110.8,45.6 24.3,39 "></polygon>
-                  </svg>
-                </div>
-              </li>
-              <li>
-                <a href="mailto:antran@caltech.edu" target="_blank" aria-label="Contact Email"><img class="link"
-                    src="./assets/Contact.svg" alt="Contact Email" /></a>
-                <div class="jelly">
-                  <svg class="red" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#FF0000" points="35.5,0 85.7,10 130.1,32.7 3.1,40 "></polygon>
-                  </svg>
-                  <svg class="cyan" x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
-                    <polygon fill="#00FFFF" points="0.3,10 125.1,0 98.8,30.6 30,39 "></polygon>
-                  </svg>
-                </div>
-              </li>
-            </ul>
-
-          </nav>
-        </div>
-        <div class="col-md-8 col-sm-12 align-self-center">
-          <div class="contents">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <article class="edu red">
-                  <div class="abs-svg">
-                    <img class="link" src="./assets/CS23.svg" alt="Class of 2023" width="200px" />
+  <body>
+    <!-- <canvas id="canvas"></canvas> -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 align-self-center">
+            <nav>
+              <header>
+                <img src="./assets/RealName.svg" alt="An Tran" />
+              </header>
+              <ul>
+                <li>
+                  <a
+                    href="./assets/resume.pdf"
+                    target="_blank"
+                    aria-label="Resume"
+                    ><img class="link" src="./assets/Resume.svg" alt="Resume"
+                  /></a>
+                  <div class="jelly">
+                    <svg
+                      class="red"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#FF0000"
+                        points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "
+                      />
+                    </svg>
+                    <svg
+                      class="cyan"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#00FFFF"
+                        points="0.3,17 125.1,0 68.8,45.6 24.3,39 "
+                      />
+                    </svg>
                   </div>
-                  <header>
-                    <h1>Education</h1>
-                  </header>
-                  <section>
-                    <div class="row">
-                      <p>California Institute of Technology</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Graduation</p>
-                      <p class="left">2023</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Major</p>
-                      <p class="left">Computer Science</p>
-                    </div>
-                  </section>
-                </article>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <article class="box int">
-                  <header>
-                    <h1>Interests</h1>
-                  </header>
-                  <section>
-                    <div class="row">
-                      <p>Systems Engineering</p>
-                      <p>Compilers &amp; Tooling</p>
-                    </div>
-                    <div class="row">
-                      <p>Machine Learning</p>
-                      <p>Infrastructure</p>
-                    </div>
-                  </section>
-                </article>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-5">
-                <article class="curemploy">
-                  <div class="abs-svg">
-                    <img class="link" src="./assets/Stars.svg" alt="Current Job" width="100px" />
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Avarel"
+                    target="_blank"
+                    aria-label="GitHub"
+                    ><img class="link" src="./assets/GitHub.svg" alt="GitHub"
+                  /></a>
+                  <div class="jelly">
+                    <svg
+                      class="red"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#FF0000"
+                        points="15.5,0 85.7,10 118.1,32.7 43.1,40 "
+                      ></polygon>
+                    </svg>
+                    <svg
+                      class="cyan"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#00FFFF"
+                        points="40.3,10 105.1,0 68.8,35.6 10,39 "
+                      ></polygon>
+                    </svg>
                   </div>
-                  <header>
-                    <h1>Current</h1>
-                  </header>
-                  <section>
-                    <div class="row">
-                      <p>Pure Storage</p>
-                    </div>
-                    <div class="row">
-                      <p>Incoming Software Engineer</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Starting Date</p>
-                      <p class="left">August 2023</p>
-                    </div>
-                  </section>
-                </article>
-              </div>
-              <div class="col-md-7 d-sm-none d-md-block">
-                <article class="pastexpr red">
-                  <div class="abs-svg">
-                    <img class="link" src="./assets/Companies.svg" alt="Past Experiences" width="100px" />
+                </li>
+                <li>
+                  <a
+                    href="https://artavarel.tumblr.com/"
+                    target="_blank"
+                    aria-label="Personal Art Gallery"
+                    ><img
+                      class="link"
+                      src="./assets/Gallery.svg"
+                      alt="Personal Art Gallery"
+                  /></a>
+                  <div class="jelly">
+                    <svg
+                      class="red"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#FF0000"
+                        points="15,5.5 120.7,10 100.1,38.7 0.1,35 "
+                      ></polygon>
+                    </svg>
+                    <svg
+                      class="cyan"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#00FFFF"
+                        points="0,8.5 110.7,0 118.1,32.7 20.1,40"
+                      ></polygon>
+                    </svg>
                   </div>
-                  <header>
-                    <h1>Past Experiences</h1>
-                  </header>
-                  <section>
-                    <div class="row">
-                      <p class="right">Software Engineer Intern</p>
-                      <p class="left">Green Hills Software (2022)</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Software Engineer Intern</p>
-                      <p class="left">SprintRay Inc. (2021)</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Head TA (CS24)</p>
-                      <p class="left">Caltech (2021–2023)</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Teaching Assistant (CS3)</p>
-                      <p class="left">Caltech (2021–2022)</p>
-                    </div>
-                    <div class="row">
-                      <p class="right">Undergraduate Researcher
-                      </p>
-                      <p class="left">Caltech (2020)</p>
-                    </div>
-                  </section>
-                </article>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <article class="code">
-                  <div class="abs-svg">
-                    <img class="link" src="./assets/DoubleEx.svg" alt="Splash Texts" width="120px" />
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/an-tran-ct"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    ><img
+                      class="link"
+                      src="./assets/LinkedIn.svg"
+                      alt="LinkedIn"
+                  /></a>
+                  <div class="jelly">
+                    <svg
+                      class="red"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#FF0000"
+                        points="0.5,8.5 100.7,0 128.1,32.7 40.1,47 "
+                      ></polygon>
+                    </svg>
+                    <svg
+                      class="cyan"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#00FFFF"
+                        points="0.3,17 125.1,0 110.8,45.6 24.3,39 "
+                      ></polygon>
+                    </svg>
                   </div>
-                  <header>
-                    <h1>Currently Working On</h1>
-                  </header>
-                  <section>
-                    <div class="content">
-                      <code id="splash"></code>
+                </li>
+                <li>
+                  <a
+                    href="mailto:antran@caltech.edu"
+                    target="_blank"
+                    aria-label="Contact Email"
+                    ><img
+                      class="link"
+                      src="./assets/Contact.svg"
+                      alt="Contact Email"
+                  /></a>
+                  <div class="jelly">
+                    <svg
+                      class="red"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#FF0000"
+                        points="35.5,0 85.7,10 130.1,32.7 3.1,40 "
+                      ></polygon>
+                    </svg>
+                    <svg
+                      class="cyan"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 108.1 47"
+                      enable-background="new 0 0 108.1 47"
+                    >
+                      <polygon
+                        fill="#00FFFF"
+                        points="0.3,10 125.1,0 98.8,30.6 30,39 "
+                      ></polygon>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-8 col-sm-12 align-self-center">
+            <div class="contents">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <article class="edu red">
+                    <div class="abs-svg">
+                      <img
+                        class="link"
+                        src="./assets/CS23.svg"
+                        alt="Class of 2023"
+                        width="200px"
+                      />
                     </div>
-                  </section>
-                </article>
+                    <header>
+                      <h1>Education</h1>
+                    </header>
+                    <section>
+                      <div class="row">
+                        <p>California Institute of Technology</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Graduation</p>
+                        <p class="left">2023</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Major</p>
+                        <p class="left">Computer Science</p>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <article class="box int">
+                    <header>
+                      <h1>Interests</h1>
+                    </header>
+                    <section>
+                      <div class="row">
+                        <p>Systems Engineering</p>
+                        <p>Compilers &amp; Tooling</p>
+                      </div>
+                      <div class="row">
+                        <p>Machine Learning</p>
+                        <p>Infrastructure</p>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-5">
+                  <article class="curemploy">
+                    <div class="abs-svg">
+                      <img
+                        class="link"
+                        src="./assets/Stars.svg"
+                        alt="Current Job"
+                        width="100px"
+                      />
+                    </div>
+                    <header>
+                      <h1>Current</h1>
+                    </header>
+                    <section>
+                      <div class="row">
+                        <p>Pure Storage</p>
+                      </div>
+                      <div class="row">
+                        <p>Incoming Software Engineer</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Starting Date</p>
+                        <p class="left">August 2023</p>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+                <div class="col-md-7 d-sm-none d-md-block">
+                  <article class="pastexpr red">
+                    <div class="abs-svg">
+                      <img
+                        class="link"
+                        src="./assets/Companies.svg"
+                        alt="Past Experiences"
+                        width="100px"
+                      />
+                    </div>
+                    <header>
+                      <h1>Past Experiences</h1>
+                    </header>
+                    <section>
+                      <div class="row">
+                        <p class="right">Software Engineer Intern</p>
+                        <p class="left">Green Hills Software (2022)</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Software Engineer Intern</p>
+                        <p class="left">SprintRay Inc. (2021)</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Head TA (CS24)</p>
+                        <p class="left">Caltech (2021–2023)</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Teaching Assistant (CS3)</p>
+                        <p class="left">Caltech (2021–2022)</p>
+                      </div>
+                      <div class="row">
+                        <p class="right">Undergraduate Researcher</p>
+                        <p class="left">Caltech (2020)</p>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <article class="code">
+                    <div class="abs-svg">
+                      <img
+                        class="link"
+                        src="./assets/DoubleEx.svg"
+                        alt="Splash Texts"
+                        width="120px"
+                      />
+                    </div>
+                    <header>
+                      <h1>Currently Working On</h1>
+                    </header>
+                    <section>
+                      <div class="content">
+                        <code id="splash"></code>
+                      </div>
+                    </section>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
