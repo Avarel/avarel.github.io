@@ -37,7 +37,7 @@ $rim-size: 8px;
   flex-direction: column;
   font-family: "Arsenal", sans-serif;
 
-  article {
+  section {
     position: relative;
 
     display: flex;
@@ -118,11 +118,11 @@ $rim-size: 8px;
       transform: none;
     }
 
-    &.red>section {
+    &.red>.box {
       border: $rim-size solid red;
     }
 
-    >section {
+    >.box {
       flex: 1;
       padding-top: $header-height - $header-offset;
       background: black;
