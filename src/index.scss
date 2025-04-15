@@ -62,7 +62,7 @@ $rim-size: 8px;
       display: flex;
 
       h1 {
-        background: linear-gradient(100deg, white 49.9%, #ebebeb 50%);
+        background: linear-gradient(100deg, white 50%, #ebebeb 50%);
         border: 5px solid black;
         position: relative;
         left: -15px;
@@ -234,9 +234,9 @@ body {
 
 body>main {
   background: linear-gradient(100deg,
-      #8d0a28 24.9%,
+      #8d0a28 25%,
       #a90329 25%,
-      #a90329 49.9%,
+      #a90329 50%,
       #00000000 50%);
   overflow-y: auto;
   overflow-x: hidden;
